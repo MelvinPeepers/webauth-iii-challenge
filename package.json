@@ -19,7 +19,10 @@
   },
   "homepage": "https://github.com/MelvinPeepers/webauth-iii-challenge#readme",
   "dependencies": {
+    "and": "0.0.3",
     "express": "^4.17.1",
-    "nodemon": "^1.19.2"
+    "knex": "^0.19.4",
+    "nodemon": "^1.19.2",
+    "sqlite3": "^4.1.0"
   }
 }
