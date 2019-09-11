@@ -28,4 +28,5 @@ module.exports = (req, res, next) => {
       message: 'no token provided'
     })
   }
+  // GET localhost:5000/api/users tested in Insomnia
 };

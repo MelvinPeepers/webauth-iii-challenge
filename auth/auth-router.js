@@ -22,6 +22,7 @@ router.post('/register', (req, res) => {
         res.status(500).json(error);
       });
   });
+  // POST localhost:5000/api/auth/register tested in Insomnia
   
   router.post('/login', (req, res) => {
     let { username, password } = req.body;
@@ -39,13 +40,14 @@ router.post('/register', (req, res) => {
             token
           });
         } else {
-          res.status(401).json({ message: 'Invalid Credentials' });
+          res.status(401).json({ message: 'You shall not pass!' });
         }
       })
       .catch(error => {
         res.status(500).json(error);
       });
   });
+   // POST localhost:5000/api/auth/login tested in Insomnia
 
   function generateToken(user) {
     // header payload and verify signature
